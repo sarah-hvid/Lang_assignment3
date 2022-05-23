@@ -19,7 +19,7 @@ pip install -r requirements.txt
 The data used in the assignment is the files in the folder called ```network_data```. The data is available in the shared ```CDS-LANG``` folder. The files must be placed in the ```data``` folder in order to replicate the results of this assignment.\
 The current working directory when running the script must be the one that contains the ```data```, ```output``` and ```src``` folder.\
 \
-How to run the scripts from the command line: 
+How to run the script from the command line: 
 
 __The network anaysis script__\
 Specified file:
