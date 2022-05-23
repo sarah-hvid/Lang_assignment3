@@ -41,6 +41,15 @@ Examples of the outputs of the script can be found in the ```output``` folder.
 The results of the script are as expected. The plots and CSV files are created as they should. As this script does not attempt to analyse any particular data but rather functions on any _'random'_ data, there are no results to discuss per se.\
 The output is the result:\
 \
+**CSV file**
+
+| Name  | Degree | Eigenvector  | Betweenness |
+| ------------- | ------------- | ------------- | ------------- |
+| Buckingham  | 9  | 0.12232958324001253  | 0.2264562834249246  |
+| Norfolk  | 11  | 0.300241533764166  | 0.15881797902703826 |
+| Abergavenny  | 3  | 0.05305190189311667  | 0.009290264516745358 |
+| ...  | ...  | ...  | ... |
+
 **Standard plot**
 
 <img src="/output/nx_standard_H5.png" width="500" height="400">
