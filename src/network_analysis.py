@@ -16,8 +16,10 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 
-# function that specifies the required arguments
 def parse_args():
+    '''
+    Function that specifies the required and available arguments.
+    '''
     # Initialise argparse
     ap = argparse.ArgumentParser()
     
@@ -32,7 +34,7 @@ def parse_args():
 # function that loads the data
 def read_df(filepath):
     '''
-    function that reads in a CSV file that's tab separated. it also returns the cleaned name of the file.
+    Function that reads in a CSV file that is tab separated. It also returns the cleaned name of the file.
     
     filepath: the path to the CSV file.
     '''
@@ -43,37 +45,6 @@ def read_df(filepath):
     file_only = split_filename.split(".")[0]
     
     return df, file_only
-
-
-def plot_network(G, file_name):
-    '''
-    Function that plots a network graph in different styles and saves it with the filename the graph was created from.
-    
-    G: a networkx graph object
-    file_name: the filename we are working with
-    '''
-    # grabbing plot argument
-    args = parse_args()
-    plot_style = args['plot_style']
-    
-    # drawing the network by style
-    if plot_style == 'circular':
-        nx.draw_circular(G, with_labels=True, node_size=20, font_size=10)
-    
-    elif plot_style == 'kamada_kawai':
-        nx.draw_kamada_kawai(G, with_labels=True, node_size=20, font_size=10)
-        
-    elif plot_style == 'spring':
-        nx.draw_spring(G, with_labels=True, node_size=20, font_size=10)
-    
-    elif plot_style == 'standard':
-        nx.draw_networkx(G, with_labels=True, node_size=20, font_size=10)
-        
-    # saving the plot
-    outpath = os.path.join('output', f'nx_{plot_style}_{file_name}.png')
-    plt.savefig(outpath, dpi=300, bbox_inches='tight')
-        
-    return
        
 
 def network_analysis(df):
@@ -118,7 +89,38 @@ def network_csv(dg, ev, bc, file_name):
     
     return
  
+ 
+def plot_network(G, file_name):
+    '''
+    Function that plots a network graph in different styles and saves it with the filename the graph was created from.
     
+    G: a networkx graph object
+    file_name: the filename we are working with
+    '''
+    # grabbing plot argument
+    args = parse_args()
+    plot_style = args['plot_style']
+    
+    # drawing the network by style
+    if plot_style == 'circular':
+        nx.draw_circular(G, with_labels=True, node_size=20, font_size=10)
+    
+    elif plot_style == 'kamada_kawai':
+        nx.draw_kamada_kawai(G, with_labels=True, node_size=20, font_size=10)
+        
+    elif plot_style == 'spring':
+        nx.draw_spring(G, with_labels=True, node_size=20, font_size=10)
+    
+    elif plot_style == 'standard':
+        nx.draw_networkx(G, with_labels=True, node_size=20, font_size=10)
+        
+    # saving the plot
+    outpath = os.path.join('output', f'nx_{plot_style}_{file_name}.png')
+    plt.savefig(outpath, dpi=300, bbox_inches='tight')
+        
+    return
+
+
 def main():
     '''
     The process of the script.
