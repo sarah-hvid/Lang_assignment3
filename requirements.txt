@@ -1,5 +1,5 @@
 # packages
-glob
+glob2
 argparse
 pandas
 networkx
