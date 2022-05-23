@@ -1,9 +1,3 @@
-A script that performs a simple network analysis.
-As input, provide either a filename or directory after the flag: -f.
-The user may also specify either of the following styles for the network plot: kamada_kawai, circular, spring, after the flag: -p.
-    - if unspecified, the standard plotting will be used. 
-The script outputs a figure and csv file for each input file, and will print a success message. 
-
 # Assignment 3 - Network analysis
  
 Link to GitHub of this assignment: https://github.com/sarah-hvid/Lang_assignment3
@@ -32,6 +26,10 @@ Specified file:
 ```bash
 python src/network_analysis.py -f data/H5.csv
 ```
+Specified file and plot style:
+```bash
+python src/network_analysis.py -f data/H5.csv -p kamada_kawai
+```
 Specified directory and plot style:
 ```bash
 python src/network_analysis.py -f data -p circular
@@ -40,8 +38,14 @@ python src/network_analysis.py -f data -p circular
 Examples of the outputs of the script can be found in the ```output``` folder. 
 
 ## Results
-The results of the script are as expected. The plots and CSV files are created as they should. As this script does not attempt to analyse any particular data but rather functions on any _'random'_ data, there are no results to discuss per se.\ 
+The results of the script are as expected. The plots and CSV files are created as they should. As this script does not attempt to analyse any particular data but rather functions on any _'random'_ data, there are no results to discuss per se.\
 The output is the result: 
 ![Network standard](/output/nx_standard_H5.png)
+
+<img
+  src="/output/nx_standard_H5.png"
+  alt="Alt text"
+  title="Networkx plot"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 ![Network standard](/output/nx_circular_H5.png)
