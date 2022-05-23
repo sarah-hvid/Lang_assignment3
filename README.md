@@ -40,12 +40,4 @@ Examples of the outputs of the script can be found in the ```output``` folder.
 ## Results
 The results of the script are as expected. The plots and CSV files are created as they should. As this script does not attempt to analyse any particular data but rather functions on any _'random'_ data, there are no results to discuss per se.\
 The output is the result: 
-![Network standard](/output/nx_standard_H5.png)
-
-<img
-  src="/output/nx_standard_H5.png"
-  alt="Alt text"
-  title="Networkx plot"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
-
-![Network standard](/output/nx_circular_H5.png)
+![Network standard](/output/nx_standard_H5.png "Standard plot")
