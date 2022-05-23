@@ -41,7 +41,14 @@ Examples of the outputs of the script can be found in the ```output``` folder.
 The results of the script are as expected. The plots and CSV files are created as they should. As this script does not attempt to analyse any particular data but rather functions on any _'random'_ data, there are no results to discuss per se.\
 The output is the result:\
 \
-**Networkx standard plot**
+**Standard plot**
 
 <img src="/output/nx_standard_H5.png" width="500" height="400">
+
+**Circular plot**
+
+<img src="/output/nx_circular_H5.png" width="500" height="400">
+
+
+
 
