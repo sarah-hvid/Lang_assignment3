@@ -41,7 +41,7 @@ Examples of the outputs of the script can be found in the ```output``` folder.
 The results of the script are as expected. The plots and CSV files are created as they should. As this script does not attempt to analyse any particular data but rather functions on any _'random'_ data, there are no results to discuss per se.\
 The output is the result:\
 \
-**CSV file**
+[**CSV file**](/output/network_H8.csv)
 
 | Name  | Degree | Eigenvector  | Betweenness |
 | ------------- | ------------- | ------------- | ------------- |
