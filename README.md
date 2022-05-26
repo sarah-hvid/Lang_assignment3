@@ -10,7 +10,7 @@ The full assignment description is available in the ```assignment3.md``` file.
 Initially, the user must specify either a CSV file or directory of CSV files as input (*note* these should be tab delimited). The same steps are then applied for each file specified, regardless of the input type. The file is loaded as a ```pandas``` dataframe. The ```Networkx``` module is then used to conduct the network analysis itself. Three centrality scores are calculated and saved in a CSV file; degree centrality, eigen vector centrality and betweenness centrality. The CSV file will be saved in the ```output``` folder, and the name will vary depending on the input file name. A plot will also be created of the network graph. The user may specify the following parameters:
 - layout (-l): *kamada_kawai*, *circular*, *spring* or *random*. *Spring* is the default.
 - node_size (-n): boolean input, **0** makes all nodes the same size, **1** bases the nodesize on the number of degrees a node has. **0** is the default.
-- edge_width (-e): boolean input, **0** makes all edges the same width, **1** bases the width on the weight between two nodes. **0** is the default.\
+- edge_width (-e): boolean input, **0** makes all edges the same width, **1** bases the width on the weight between two nodes. **0** is the default.
 
 A scaling function is used to fit the values of degree and weight within a specified range. The plot will be saved in the ```output``` folder and named according to input file name, layout, nodesize value and edge width value. 
 
