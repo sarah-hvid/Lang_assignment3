@@ -2,5 +2,7 @@
 glob2
 argparse
 pandas
+numpy
 networkx
 matplotlib
+math
